@@ -14,3 +14,15 @@ function userQuestions(){
         ]
     )
 }
+
+function init(){
+    try{
+        const responses = userQuestions();
+        const generateDoc = template(responses);
+        writer("./dest/readme2.md", generateDoc);
+    } catch(error){
+        console.log(error);
+    }
+}
+
+init();
