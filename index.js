@@ -74,7 +74,7 @@ const questions = [
         type:"list",
         name:"license",
         message:"Choose license used for project: ",
-        choices: ['Apache license 2.0','BSD 2-clause "Simplified" license','Creative Commons Attribution 4.0','ISC', 'MIT', 'Microsoft Public License','Mozilla Public License 2.0', 'No license']
+        choices: ['Apache license 2.0','BSD 2-clause License','ISC', 'MIT','Mozilla Public License 2.0', 'No license']
     },
     {
         type:"input",
