@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
+const util = require("util");
 const generateMarkdown = require("./utils/generateMarkdown")
 // TODO: Create an array of questions for user input
 const questions = [
@@ -22,6 +23,17 @@ const questions = [
         check: function(response){
             if(response.length < 1){
                 return console.log("Must enter valid email address");
+            }
+            return true;
+        }
+    },
+    {
+        type:"input",
+        name:"githubProfileLink",
+        message:"What is the link to your GitHub profile? ",
+        check: function(response){
+            if(response.length < 1){
+                return console.log("Must enter valid URL");
             }
             return true;
         }
@@ -73,20 +85,28 @@ const questions = [
         type:"input",
         name:"tests",
         message:"What tests are included if any? "
+    },
+    {
+        type:"input",
+        name:"questions",
+        message:"Do you have any questions regarding the project? "
     }
 ];
 
+const writeAsyncFile = util.promisify(writeToFile);
+
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data);
+    fs.WriteFile(fileName, data);
+    console.log("README generated");
 }
 
 // TODO: Create a function to initialize app
 async function init() {
     try{
         const responses = await inquirer.prompt(questions);
-        const mark = generateMarkdown(responses)
-        await writeFileAsync
+        const mark = generateMarkdown(responses);
+        writeAsyncFile('newREADME.md', mark);
     } catch(error){
         console.log(error);
     }}
