@@ -1,7 +1,6 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const util = require('util');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 // TODO: Create an array of questions for user input
 const questions = [
@@ -99,6 +98,7 @@ function writeToFile(fileName, data) {
         if (error){
             return console.log(error);
         }
+        console.log("");
         console.log("README generated");
     });
 }
