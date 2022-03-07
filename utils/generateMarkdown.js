@@ -92,9 +92,9 @@ function generateMarkdown(data) {
   ## Questions
   ${data.questions}
 
-    Created by ${data.userName}
-    - Email: ${data.email}
-    - Link to GitHub: ${data.githubProfileLink}
+  Created by ${data.userName} \ 
+  Have any questions? Feel free to email me at ${data.email} \
+  Link to GitHub: ${data.githubProfileLink}
 
 `;
 }
