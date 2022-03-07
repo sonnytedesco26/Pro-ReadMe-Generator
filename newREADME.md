@@ -12,30 +12,30 @@
 
 
   ## Description
-  bla bla bla bla bla bla bla
+  bla bla bla
 
   ## Installation
-  Required inquirer and fs packages
+  Required inquirer and fs
 
   ## Usage
-  generating readme
+  generates readme
 
   ## License
   License: MIT <br />
   https://opensource.org/licenses/MIT
 
   ## Contributers
-  Just me
+  just me
 
   ## Tests
-  Tests 1 2 and 3
+  test file is included, titled NewReadMe
 
   ## Questions
-  Question A
+  question a, b 
   <br />
   <br />
   Created by sonnytedesco26 <br />
   <br />
   Have any questions? Feel free to email me at sonny.tedesco@gmail.com <br />
-  Link to GitHub: https://github.com/sonnytedesco26
+  Link to GitHub: githublink
 
