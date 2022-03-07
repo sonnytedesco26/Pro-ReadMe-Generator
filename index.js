@@ -95,12 +95,12 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    util.promisify(fs.writeFile(fileName, data, error => {
+        fs.writeFile(fileName, data, error => {
         if (error){
             return console.log(error);
         }
         console.log("README generated");
-    }));
+    });
 }
 
 // TODO: Create a function to initialize app

@@ -80,7 +80,7 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## License
-  ${renderLicenseSection(data)}\
+  ${renderLicenseSection(data)} <br />
   Link: ${renderLicenseLink(data)}
 
   ## Contributers
@@ -91,9 +91,11 @@ function generateMarkdown(data) {
 
   ## Questions
   ${data.questions}
-
-  Created by ${data.userName}\
-  Have any questions? Feel free to email me at ${data.email}\
+  <br />
+  <br />
+  Created by ${data.userName} <br />
+  <br />
+  Have any questions? Feel free to email me at ${data.email} <br />
   Link to GitHub: ${data.githubProfileLink}
 
 `;
